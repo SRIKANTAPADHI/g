@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srikant Padhi | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Background blobs -->
+    <div class="bg-blobs" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <span class="blob b3"></span>
+    </div>
+
+    <!-- Navbar -->
+    <header class="header" id="top">
+        <nav class="nav container">
+            <a class="logo" href="#home">
+                <span class="logo-dot"></span>
+                <span>Srikant</span>
+            </a>
+
+            <button class="icon-btn nav-toggle" aria-label="Open menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="icon-btn theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+                <a class="btn btn-sm btn-primary" href="#contact">Hire Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile drawer -->
+    <aside class="drawer" aria-hidden="true">
+        <div class="drawer-head">
+            <span class="drawer-title">Menu</span>
+            <button class="icon-btn drawer-close" aria-label="Close menu">✕</button>
+        </div>
+        <div class="drawer-links">
+            <a href="#home" class="drawer-link">Home</a>
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#skills" class="drawer-link">Skills</a>
+            <a href="#projects" class="drawer-link">Projects</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+            <button class="btn btn-outline w-full theme-toggle-2">Toggle Theme</button>
+            <a class="btn btn-primary w-full" href="#contact">Hire Me</a>
+        </div>
+    </aside>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <!-- Hero -->
+    <main>
+        <section class="hero container section" id="home">
+            <div class="hero-left">
+                <div class="badge">
+                    <span class="pulse"></span>
+                    Available for freelance • 2026
+                </div>
+
+                <h1 class="title">
+                    Hi, I’m <span class="grad">Srikant Padhi</span> <br />
+                    <span class="muted">Frontend / Full-Stack Learner</span>
+                </h1>
+
+                <p class="subtitle">
+                    I build clean, responsive websites with modern UI and smooth interactions.
+                    Passionate about HTML, CSS, JavaScript and creating real projects.
+                </p>
+
+                <div class="cta">
+                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <a class="btn btn-outline" href="#contact">Contact</a>
+                  <a class="btn btn-ghost" href="resume.pdf" download="Srikant_Padhi_Resume.pdf">
+  Download Resume
+</a>
+
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-num">10+</div>
+                        <div class="stat-text">Mini Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">Clean</div>
+                        <div class="stat-text">UI Focused</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">Fast</div>
+                        <div class="stat-text">Responsive</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="card profile">
+                    <div class="profile-top">
+                        <div class="avatar avatar-img" title="Your photo">
+                            <img src="srikant.jpeg" alt="Srikant Padhi" />
+                        </div>
+
+                        <div>
+                            <h3>Srikant Padhi</h3>
+                            <p class="small muted">Web Developer • India</p>
+                        </div>
+                    </div>
+
+                    <div class="chips">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Responsive UI</span>
+                    </div>
+
+                    <div class="profile-actions">
+                        <a class="btn btn-sm btn-outline" href="#contact">Message</a>
+                        <a class="btn btn-sm btn-primary" href="#projects">Work</a>
+                    </div>
+
+                    <div class="mini-grid">
+                        <div class="mini">
+                            <span class="mini-title">Focus</span>
+                            <span class="mini-value">Modern UI</span>
+                        </div>
+                        <div class="mini">
+                            <span class="mini-title">Stack</span>
+                            <span class="mini-value">JS + CSS</span>
+                        </div>
+                        <div class="mini">
+                            <span class="mini-title">Goal</span>
+                            <span class="mini-value">Job Ready</span>
+                        </div>
+                        <div class="mini">
+                            <span class="mini-title">Status</span>
+                            <span class="mini-value">Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating">
+                    <div class="float-card">
+                        <span class="dot"></span> Smooth scroll + Animations
+                    </div>
+                    <div class="float-card">
+                        <span class="dot"></span> Dark / Light Mode
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="container section" id="about">
+            <div class="section-head">
+                <h2>About</h2>
+                <p class="muted">A quick introduction about me and what I do.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Who am I?</h3>
+                    <p class="muted">
+                        I’m a web developer focused on building clean and modern interfaces.
+                        I enjoy turning ideas into beautiful, responsive websites and learning
+                        new technologies step by step.
+                    </p>
+
+                    <div class="about-list">
+                        <div class="about-item">
+                            <span class="about-label">Location</span>
+                            <span class="about-value">odisha,India</span>
+                        </div>
+                        <div class="about-item">
+                            <span class="about-label">Role</span>
+                            <span class="about-value">Frontend / Full-stack learner</span>
+                        </div>
+                        <div class="about-item">
+                            <span class="about-label">Currently</span>
+                            <span class="about-value">Building projects daily</span>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a class="btn btn-primary" href="#contact">Let’s Work</a>
+                        <a class="btn btn-outline" href="#skills">My Skills</a>
+                    </div>
+                </div>
+
+                <div class="card highlights">
+                    <h3>Highlights</h3>
+                    <div class="highlight">
+                        <div class="icon">⚡</div>
+                        <div>
+                            <p class="h-title">Fast & Responsive</p>
+                            <p class="muted small">Mobile-first layouts that look great everywhere.</p>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <div class="icon">🎨</div>
+                        <div>
+                            <p class="h-title">Modern UI</p>
+                            <p class="muted small">Clean typography, spacing, and tasteful effects.</p>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <div class="icon">🧠</div>
+                        <div>
+                            <p class="h-title">Problem Solver</p>
+                            <p class="muted small">I enjoy debugging and improving code quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="container section" id="skills">
+            <div class="section-head">
+                <h2>Skills</h2>
+                <p class="muted">A quick view of my current skill level.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="card">
+                    <div class="skill-head">
+                        <h3>Frontend</h3>
+                        <p class="muted small">UI + Layout + Interactions</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-row">
+                            <span>HTML</span><span class="muted small">90%</span>
+                        </div>
+                        <div class="bar"><span data-fill="90"></span></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-row">
+                            <span>CSS</span><span class="muted small">85%</span>
+                        </div>
+                        <div class="bar"><span data-fill="85"></span></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-row">
+                            <span>JavaScript</span><span class="muted small">75%</span>
+                        </div>
+                        <div class="bar"><span data-fill="75"></span></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-row">
+                            <span>Responsive Design</span><span class="muted small">85%</span>
+                        </div>
+                        <div class="bar"><span data-fill="85"></span></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="skill-head">
+                        <h3>Tools</h3>
+                        <p class="muted small">Workflows & best practices</p>
+                    </div>
+
+                    <div class="tool-chips">
+                        <span class="chip">Git</span>
+                        <span class="chip">GitHub</span>
+                        <span class="chip">VS Code</span>
+                        <span class="chip">Chrome DevTools</span>
+                        <span class="chip">Figma Basics</span>
+                        <span class="chip">API Basics</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <h4 class="muted small">What I’m learning next</h4>
+                    <ul class="list">
+                        <li>React basics</li>
+                        <li>Node + Express</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+
+                <div class="card services">
+                    <h3>What I can build</h3>
+                    <div class="service">
+                        <span class="service-icon">🧩</span>
+                        <div>
+                            <p class="service-title">Landing Pages</p>
+                            <p class="muted small">Modern layout, hero, sections, CTA.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <span class="service-icon">🛒</span>
+                        <div>
+                            <p class="service-title">Small Business Sites</p>
+                            <p class="muted small">Home, services, gallery, contact.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <span class="service-icon">📱</span>
+                        <div>
+                            <p class="service-title">Responsive UI</p>
+                            <p class="muted small">Mobile-first and fast.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="container section" id="projects">
+            <div class="section-head row">
+                <div>
+                    <h2>Projects</h2>
+                    <p class="muted">Filter and explore some sample work.</p>
+                </div>
+
+                <div class="filters">
+                    <button class="pill active" data-filter="all">All</button>
+                    <button class="pill" data-filter="web">Web</button>
+                    <button class="pill" data-filter="ui">UI</button>
+                    <button class="pill" data-filter="js">JavaScript</button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project card" data-type="js ui">
+                    <div class="project-top">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">UI</span>
+                    </div>
+                    <h3>Med-Inventory</h3>
+                    <p class="muted small">MedInventory — Smart Medicine Management, Simplified.</p>
+                    <div class="project-actions">
+                        <a class="btn btn-sm btn-outline" href="https://med-inventory-gamma.vercel.app/">Live</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/SRIKANTAPADHI/MedInventory">Code</a>
+                    </div>
+                </article>
+
+                <article class="project card" data-type="js">
+                    <div class="project-top">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Utility</span>
+                    </div>
+                    <h3>Zenvora E-commerce website </h3>
+ <p class="muted small">
+        Discover more, shop smarter. A modern e-commerce
+        platform featuring product browsing, cart management,
+        secure payments, and seamless checkout.
+    </p>
+                    <div class="project-actions">
+                        <a class="btn btn-sm btn-outline" href="https://zenvora-e-commerce.vercel.app/">Live</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/SRIKANTAPADHI/Zenvora-E-Commerce">Code</a>
+                    </div>
+                </article>
+
+                <article class="project card" data-type="web">
+                    <div class="project-top">
+                        <span class="tag">Website</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <h3>Portfolio v1</h3>
+                    <p class="muted small">A responsive portfolio with sections and navbar.</p>
+                    <div class="project-actions">
+                        <a class="btn btn-sm btn-outline" href="https://portfolio-ashy-mu-54.vercel.app/">Live</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/SRIKANTAPADHI/portfolio">Code</a>
+                    </div>
+                </article>
+
+                <article class="project card" data-type="ui">
+                    <div class="project-top">
+                        <span class="tag">UI</span>
+                        <span class="tag">Components</span>
+                    </div>
+                    <h3>Component Showcase</h3>
+                    <p class="muted small">Buttons, cards, forms, and interactive states.</p>
+                    <div class="project-actions">
+                        <a class="btn btn-sm btn-outline" href="#">Live</a>
+                        <a class="btn btn-sm btn-primary" href="#">Code</a>
+                    </div>
+                </article>
+
+                <article class="project card" data-type="js web">
+                    <div class="project-top">
+                        <span class="tag">Web</span>
+                        <span class="tag">JS</span>
+                    </div>
+                    <h3>API Mini App</h3>
+                    <p class="muted small">Fetch API + loading states + error handling.</p>
+                    <div class="project-actions">
+                        <a class="btn btn-sm btn-outline" href="#">Live</a>
+                        <a class="btn btn-sm btn-primary" href="#">Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="container section" id="contact">
+            <div class="section-head">
+                <h2>Contact</h2>
+                <p class="muted">Send a message — I’ll reply soon.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Let’s talk</h3>
+                    <p class="muted small">
+                        Want a portfolio, landing page, or small business website?
+                        Send your details and I’ll respond.
+                    </p>
+
+                    <div class="contact-cards">
+                        <div class="contact-item">
+                            <span class="c-icon">📧</span>
+                            <div>
+                                <p class="small muted">Email</p>
+                                <p>srikantpadhi1947@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="c-icon">📍</span>
+                            <div>
+                                <p class="small muted">Location</p>
+                                <p>Odisha, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="c-icon">💼</span>
+                            <div>
+                                <p class="small muted">GitHub</p>
+                                <p>github.com/SRIKANTAPADHI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="card form" id="contactForm" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required />
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                        <small class="error"></small>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+                    <p class="muted small form-note">This is my full portfolio website.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p class="muted small">© <span id="year"></span> Srikant Padhi. All rights reserved.</p>
+                <a class="muted small" href="#top">Back to top ↑</a>
+            </div>
+        </footer>
+
+        <!-- Scroll to top -->
+        <button class="to-top icon-btn" aria-label="Scroll to top">↑</button>
+    </main>
+</body>
+
+</html>
